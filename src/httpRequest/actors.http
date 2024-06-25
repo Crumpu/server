@@ -1,0 +1,32 @@
+GET http://127.0.0.1:5000/actors 
+
+# Get actorById
+###
+GET http://127.0.0.1:5000/actors/4
+
+# Create actor
+### 
+POST http://127.0.0.1:5000/actors 
+Content-Type: application/json
+
+  {
+    "fullName": "Bred Peet",
+    "birthYear": 1963,
+    "nationality": "USA"
+  }
+
+# Delete actor
+### 
+DELETE http://127.0.0.1:5000/actors/8
+
+
+# Update actor
+###
+PUT http://127.0.0.1:5000/actors/4
+Content-Type: application/json
+
+{
+  "fullName": "Harry Potter",
+  "birthYear": 1963,
+  "nationality": "UK"
+}

@@ -1,0 +1,28 @@
+GET http://127.0.0.1:5000/directors/
+
+# Get directorById
+###
+GET http://127.0.0.1:5000/directors/5
+
+
+# Create Director
+###
+POST http://127.0.0.1:5000/directors 
+Content-Type: application/json
+
+{
+  "name": "Chris Columbus"
+}
+
+# Update Director
+###
+PUT http://127.0.0.1:5000/directors/5
+Content-Type: application/json
+
+{
+  "name": "Tarantino"
+}
+
+# Delete director
+###
+DELETE  http://127.0.0.1:5000/directors/10

@@ -1,0 +1,28 @@
+GET http://127.0.0.1:5000/studios/
+
+# Get studioById
+###
+GET http://127.0.0.1:5000/studios/5
+
+
+# Create studio
+###
+POST http://127.0.0.1:5000/studios 
+Content-Type: application/json
+
+{
+  "name": "Paramount"
+}
+
+# Update studio
+###
+PUT http://127.0.0.1:5000/studios/5
+Content-Type: application/json
+
+{
+  "name": "20th century FOX"
+}
+
+# Delete studio
+###
+DELETE  http://127.0.0.1:5000/studios/10

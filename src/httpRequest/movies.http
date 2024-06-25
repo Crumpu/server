@@ -1,0 +1,28 @@
+GET http://127.0.0.1:5000/movies/
+
+# Get movieById
+###
+GET http://127.0.0.1:5000/movies/5
+
+
+# Create Movie
+###
+POST http://127.0.0.1:5000/movies 
+Content-Type: application/json
+
+{
+  "name": "Titanic"
+}
+
+# Update Movie
+###
+PUT http://127.0.0.1:5000/movies/5
+Content-Type: application/json
+
+{
+  "name": "Home alone"
+}
+
+# Delete movie
+###
+DELETE  http://127.0.0.1:5000/movies/10
