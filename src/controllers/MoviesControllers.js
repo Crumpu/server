@@ -9,7 +9,7 @@ class MoviesControllers {
     const {
       params: { movieId }
     } = req;
-    const movie = movies.filter(
+    const [movie] = movies.filter(
       (movie) => movie.id === Number(movieId)
     );
     if (movie) {

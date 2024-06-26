@@ -9,7 +9,7 @@ class DirectorsControllers {
     const {
       params: { directorId },
     } = req;
-    const director = directors.filter(
+    const [director] = directors.filter(
       (director) => director.id === Number(directorId)
     );
     if (director) {

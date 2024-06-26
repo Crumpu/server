@@ -9,7 +9,7 @@ class StudiosControllers {
     const {
       params: { studioId },
     } = req;
-    const studio = studios.filter((studio) => studio.id === Number(studioId));
+    const [studio] = studios.filter((studio) => studio.id === Number(studioId));
     if (studio) {
       res.status(200).send(studio);
     } else {
