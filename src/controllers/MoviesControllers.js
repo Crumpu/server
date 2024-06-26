@@ -7,7 +7,7 @@ class MoviesControllers {
 
   getMovieById(req, res) {
     const {
-      params: { movieId },
+      params: { movieId }
     } = req;
     const movie = movies.filter(
       (movie) => movie.id === Number(movieId)

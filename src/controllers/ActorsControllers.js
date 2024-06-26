@@ -10,9 +10,9 @@ class ActorsControllers {
     const {
       params: { actorId },
     } = req;
-    const  actor  = actors.filter((actor) => actor.id === Number(actorId))[0];
+    const  actor  = actors.filter((actor) => actor.id === Number(actorId));
     if (actor) {
-      res.status(200).send({...actor});
+      res.status(200).send(actor);
     } else {
       res.status(404).send("Actor not found");
     }
